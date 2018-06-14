@@ -44,6 +44,54 @@ body {
     font-weight: bold;
 }
 
+/*dropdownHamburger*/
+.sidenavWrapper {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right:0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 75px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f14c38;
+    font-weight: 700;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.iconHamburger {
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 39px;
+    color: #f14c38;
+}
+
 /*BANER*/
 .baner {
     position: relative;
@@ -222,7 +270,6 @@ email {
 @media screen and (min-width: 992px) and (max-width: 1222px) {
     
     /*BANER media*/
-
     .infoBlok .description {
         padding-left: 5%;
         padding-right: 5%;
@@ -370,6 +417,12 @@ email {
 
 @media screen and (min-width: 420px) and (max-width: 767px) {
         /*HEADER media*/
+        #navbarNav {
+            display: none;
+        }
+        .sidenavWrapper {
+            display: block;
+        }
         .brand-wrapper {
             width: 40%
         }

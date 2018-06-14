@@ -7,9 +7,11 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" href="../bootstrap-4.1.1-dist/js/bootstrap.min.js">
         <link rel="stylesheet" href="../bootstrap-4.1.1-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="../Landing_Hi-Lift_Jack_1.2/style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+        <script src="../bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <nav class="row navbar align-items-start">
@@ -31,10 +33,20 @@
                     </li>
                 </ul>                    
             </header>
+            <div class="sidenavWrapper">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <a href="#sectionSpecifications">ХАРАКТЕРИСТИКИ</a>
+                    <a href="#sectionAccessories">АКСЕССУАРЫ</a>
+                    <a href="#footer">КОНТАКТЫ</a>
+                </div>
+                <a href="#" class="iconHamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></a>
+            </div>   
         </nav>
+        
         <main>
             <div class="container-fluid justify-content-end baner" id="sectionBaner">
-                <img class=".img-fluid" src="../Landing_Hi-Lift_Jack_1.2/arb-hilift-banner-01.jpg" alt="">
+                <img class=".img-fluid" src="../Landing_Hi-Lift_Jack_1.2/images/arb-hilift-banner-01.jpg" alt="">
                 <div class="infoBlok">
                     <h1 class="name-product">Реечный домкрат <br> Hi-Lift Jack 1.2м</h1>
                     <p class="description">Домкрат обладает мощностью 3175 килограм и может использоваться для подъема, вытягивания, фиксации, толкания, перекидывания автомобиля и работы с лебедкой. Это приспособление многоцелевого назначения, которое пригодится Вам как дома, так и в условиях сурового бездорожья. Хай Джек поможет вам вытащить ваш автомобиль в самых сложных и экстремальных ситуациях. Если вы приобретете его и попользуетесь некоторое время, то вы начнете воспринимать его как верного и незаменимого друга.</p>
@@ -97,7 +109,7 @@
                     </div>
                     <div class="col-lg-6">
                         <article class="article-img">
-                            <img src="../Landing_Hi-Lift_Jack_1.2/ARB1207HiLiftXtreme01_Hilift11.jpg">
+                            <img src="../Landing_Hi-Lift_Jack_1.2/images/ARB1207HiLiftXtreme01_Hilift11.jpg">
                         </article>
                     </div>
                 </div>
@@ -111,26 +123,26 @@
                 <div class="row">
                     <div class="col-lg-3 card-product">
                         <h4>Зацеп к диску для домкрата Hi-Lift Jack</h3>
-                        <img src="../Landing_Hi-Lift_Jack_1.2/ARBLiftMate0208-352x332 (1).jpg" alt="">
+                        <img src="../Landing_Hi-Lift_Jack_1.2/images/ARBLiftMate0208-352x332 (1).jpg" alt="">
                         <p class="card-description">В качестве альтернативного места для зацепления домкратом Hi-Lift может быть колесо Вашего автомобиля. Подходит для использования с большинством колесных дисков, которые имеют крупные спицы.</p>
                         <p class="prise-acsessories">2340.7 грн</p>
                     </div>
                     <div class="col-lg-3 card-product">
                         <h4>Такелажный набор Hi-Lift Jack</h3>
-                        <img src="../Landing_Hi-Lift_Jack_1.2/OffroadkitARB203ORK-352x332.jpg" alt="">
+                        <img src="../Landing_Hi-Lift_Jack_1.2/images/OffroadkitARB203ORK-352x332.jpg" alt="">
                         <p class="card-description">Такелажный комплект содержит все, что Вам может понадобиться для использования домкрата Hi-Lift в качестве ручной лебедки. Весь комплект упакован в прочную сумку.</p>
                         <p class="prise-acsessories">3945 грн</p>
                     </div>
                     <div class="col-lg-3 card-product">
                         <h4>Фиксатор ручки домкрата</h3>
-                        <img src="../Landing_Hi-Lift_Jack_1.2/Handle-Keeper-352x332.jpg" alt="">
+                        <img src="../Landing_Hi-Lift_Jack_1.2/images/Handle-Keeper-352x332.jpg" alt="">
                         <p class="card-description">Одевается на ручку и рейку Хай-Джека в транспортном положении, а так же «Handle Keeper» фиксирует ручку в верхнем положении при работе.
                             Кроме этого Хай-Джек с зафиксированной ручкой гораздо удобнее переносить одной рукой за ручку</p>
                         <p class="prise-acsessories">657.5 грн</p>                       
                     </div>
                     <div class="col-lg-3 card-product">
                         <h4>Подставка под домкрат</h3>
-                        <img src="../Landing_Hi-Lift_Jack_1.2/OffroadbaseARB203ORB-352x332.jpg" alt="">
+                        <img src="../Landing_Hi-Lift_Jack_1.2/images/OffroadbaseARB203ORB-352x332.jpg" alt="">
                         <p class="card-description">Подставка под домкрат — простое и удобное в обращении приспособление позволяющее поднимать автомобиль Хай-Джеком на слабых грунтах.
                             Опора производства компании «Hi-Lift» надежна и безопасна в обращении.</p>
                         <p class="prise-acsessories">2235.5 грн</p>                       
@@ -167,11 +179,17 @@
             </footer>
         </main>
 
+
         <script>
-                $(document).ready(function(){
-                    $('body').scrollspy({target: ".navbar", offset: 75});   
-                });
-        </script>
+
+            function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+              
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+            </script> 
     </body>
  </html>
     
