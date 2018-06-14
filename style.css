@@ -1,35 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Pangolin');
 
 body {
+    position: relative;
     padding: 0;
 }
+
+#sectionBaner, #sectionSpecifications, #sectionAccessories {
+    padding-top: 75px;
+    height: 650px;
+    margin-top: 0;
+}
+
+/*HEADER*/
 .navbar {
+    position: fixed;
     background: #fff;
     width: 100%;
-    height: 85px;
+    height: 75px;
     z-index: 100;
-    position: fixed;
-    transition: all 0.3s ease; 
 }
-
-.navbar:hover {
-    height: 75px; 
-}
-
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-  
-    > .col,
-    > [class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
 
 .nav {
     width: 75%;
     text-transform: uppercase;
+}
+
+
+.nav-item {
+    padding: 0;
 }
 
 .nav-item a {
@@ -46,6 +44,7 @@ body {
     font-weight: bold;
 }
 
+/*BANER*/
 .baner {
     position: relative;
     font-family: 'Pangolin', cursive;
@@ -56,6 +55,21 @@ body {
     max-width: 100%;
 }
 
+.infoBlok {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    z-index: 99;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    opacity: 0.6;
+}
+
 .baner-text {
     position: absolute;
     width: 30%;
@@ -64,54 +78,28 @@ body {
     z-index: 100;
 }
 
-.infoBlok {
-    width: 50%;
-    height: 100%;
-    background: #fff;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 99;
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    opacity: 0.6;
-}
-
-.infoBlok h1 {
-    color: red;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin-top: 25px;
-    letter-spacing: .15em;
-    font-weight: 700;
-}
-
-.remainder-product {
-    font-size: 2.5em;
-    color: red;
-    font-weight: 400;
-    margin-top: 20px;
+.infoBlok .description {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 18px;
 }
 
 .name-product {
-    font-size: 4.4em;
+    font-size: 3.5em;
     color: #292828;
-    line-height: 1.5;
+    line-height: 1.0;
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .prise {
     font-size: 3.5em;
     color: #c90101;
     font-weight: 600;
-    border: 2px solid gray;
-    border-radius: 10px;
     margin: 25px;
 }
-
 
 .contact-button {
     border: 2px solid gray;
@@ -154,8 +142,6 @@ body {
     margin-top: 1%;
 }
 
-
-
 .article {
     max-width: 80rem;
     margin-left: auto;
@@ -193,3 +179,288 @@ body {
     font-weight: 600;
 }
 
+/*FOOTER*/
+
+footer {
+    background: #f3f3f3;
+    margin-top: 60px;
+    padding-top: 20px;
+}
+
+footer h4 {
+    color: #292828;
+    font-family: 'Pangolin', cursive;
+}
+
+.telephones, .delivery, .payment {
+    padding-left: 7%;
+}
+
+.telephones p {
+    font-size: 20px;
+}
+
+.icons i {
+   font-size: 1.5em; 
+   color: black;
+}
+
+email {
+    font-size: 1.3em;  
+}
+
+.site {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.fa-facebook:hover {
+    font-size: 2.5em;
+    color: #f14c38;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1222px) {
+    
+    /*BANER media*/
+
+    .infoBlok .description {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .name-product {
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+    
+    .prise {
+        font-size: 2.5em;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    
+    .contact-button {
+        margin: 10px;
+    }
+    
+    .contact-button a {
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+
+    /*ТЕХНИЧЕСКИЕ ХАРАКТЕРИТИКИ media*/
+    .article-text {
+        font-size: 1.em;
+    }
+
+    /*СОПУТСТВУЮЩИЕ АКСЕССУАРЫ media*/
+    
+    .card-product h4 {
+        font-size: 1.3em;
+    }
+    
+    .card-description {
+        height: 220px;
+    }
+
+    /*FOOTER media*/
+    .telephones p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /*HEADER media*/
+    .brand-wrapper {
+        width: 40%
+    }
+    .nav-item a {
+       font-size: 14px;
+    }
+    .nav {
+        width: 50%;
+        float: right;
+    }
+
+    /*BANER media*/
+    .infoBlok .description {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+    .name-product {
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+    .prise {
+        font-size: 1.5em;
+        margin: 10px;
+        margin-top: 10px;
+        width: 40%
+    }
+    .contact-button {
+        margin-top: 10px;
+        width: 40%;
+    }
+    .contact-button a {
+        font-size: 1.5em;   
+    }
+    #sectionBaner {
+        height: 400px;
+    }
+
+    /*ТЕХНИЧЕСКИЕ ХАРАКТЕРИТИКИ media*/
+    .caption.description {
+        height: 50px;
+        margin-top: 60px;
+    }
+    .caption h1 {
+        font-size: 0.8em;
+    }
+    .article-text {
+        font-size: 1.em;
+    }
+    #sectionSpecifications {
+        height: auto;
+    }
+    .article-img img {
+        margin-top: 0;
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
+    /*СОПУТСТВУЮЩИЕ АКСЕССУАРЫ*/
+    #sectionAccessories {
+        height: auto; 
+    }
+    .caption.accessories {
+        height: 50px;
+        margin-top: 60px;
+    }
+    .card-product {
+        margin-top: 10px;
+        width: 49%;
+    }
+    .card-description {
+        height: 130px;
+    }
+
+    /*FOOTER media*/
+    .telephones p, .delivery p, .payment p {
+        font-size: 0.8em;
+    }    
+    footer h4 {
+        font-size: 1.5em;
+    }
+    .telephones, .delivery, .payment {
+        padding-left: 5%;
+    }
+    email {
+        font-size: 1em;  
+    }
+    .site {
+        font-size: 1em;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+        /*HEADER media*/
+        .brand-wrapper {
+            width: 40%
+        }
+        .nav-item a {
+           font-size: 14px;
+        }
+        .nav {
+            width: 50%;
+            float: right;
+        }
+    
+        /*BANER media*/
+        .infoBlok .description {
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+        .name-product {
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        .prise {
+            font-size: 1.5em;
+            margin: 10px;
+            margin-top: 10px;
+            width: 40%
+        }
+        .contact-button {
+            margin-top: 10px;
+            width: 40%;
+        }
+        .contact-button a {
+            font-size: 1.5em;   
+        }
+        #sectionBaner {
+            height: 400px;
+        }
+    
+        /*ТЕХНИЧЕСКИЕ ХАРАКТЕРИТИКИ media*/
+        .caption.description {
+            height: 50px;
+            margin-top: 60px;
+        }
+        .caption h1 {
+            font-size: 0.8em;
+        }
+        .article-text {
+            font-size: 1.em;
+        }
+        #sectionSpecifications {
+            height: auto;
+        }
+        .article-img img {
+            margin-top: 0;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+    
+        /*СОПУТСТВУЮЩИЕ АКСЕССУАРЫ*/
+        #sectionAccessories {
+            height: auto; 
+        }
+        .caption.accessories {
+            height: 50px;
+            margin-top: 60px;
+        }
+        .card-product {
+            margin-top: 10px;
+            width: 49%;
+        }
+        .card-description {
+            height: 130px;
+        }
+    
+        /*FOOTER media*/
+        .telephones p, .delivery p, .payment p {
+            font-size: 0.8em;
+        }    
+        footer h4 {
+            font-size: 1.5em;
+        }
+        .telephones, .delivery, .payment {
+            padding-left: 5%;
+        }
+        email {
+            font-size: 1em;  
+        }
+        .site {
+            font-size: 1em;
+            margin-left: 5px;
+        }
+    }
