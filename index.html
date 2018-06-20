@@ -13,56 +13,55 @@
         <script src="../bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
         <script src="../bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body>
-        <nav class="row navbar align-items-start">
-            <header class="container-fluid">
-                <div class="col-lg-3 brand-wrapper justify-content-start">
-                    <a class="navbar-brand" href="#">
-                        <img src="http://4x4market.com.ua/img/logo.png" alt="">
-                    </a>
+    <body data-spy="scroll" data-target=".navbar" data-offset="75">
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top bg-white" id="navbar-example3">
+                <a class="navbar-brand" href="#"><img src="http://4x4market.com.ua/img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars navbar-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionBaner">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionSpecifications">Характеристики <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionAccessories">Аксессуары</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-                 <ul class="nav justify-content-end nav-justified" id="navbarNav">
-                    <li class="nav-item active col-lg-3">
-                        <a href="#sectionBaner" class="nav-link">Главная</a>
-                    </li>
-                    <li class="nav-item col-lg-3">
-                        <a href="#sectionSpecifications" class="nav-link">Характеристики</a>
-                    </li>
-                    <li class="nav-item col-lg-3">
-                        <a href="#sectionAccessories" class="nav-link">Аксессуары</a>
-                    </li>
-                </ul>                    
-            </header>
-            <div class="sidenavWrapper">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
-                    <a href="#sectionSpecifications">ХАРАКТЕРИСТИКИ</a>
-                    <a href="#sectionAccessories">АКСЕССУАРЫ</a>
-                    <a href="#footer">КОНТАКТЫ</a>
-                </div>
-                <a href="#" class="iconHamburger" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></a>
-            </div>   
-        </nav>
-        
+            </nav>
+        </header> 
+
         <main>
-            <div class="container-fluid justify-content-end baner" id="sectionBaner">
-                <img class=".img-fluid" src="../Landing_Hi-Lift_Jack_1.2/images/arb-hilift-banner-01.jpg" alt="">
-                <div class="infoBlok">
-                    <h1 class="name-product">Реечный домкрат <br> Hi-Lift Jack 1.2м</h1>
-                    <p class="description">Домкрат обладает мощностью 3175 килограм и может использоваться для подъема, вытягивания, фиксации, толкания, перекидывания автомобиля и работы с лебедкой. Это приспособление многоцелевого назначения, которое пригодится Вам как дома, так и в условиях сурового бездорожья. Хай Джек поможет вам вытащить ваш автомобиль в самых сложных и экстремальных ситуациях. Если вы приобретете его и попользуетесь некоторое время, то вы начнете воспринимать его как верного и незаменимого друга.</p>
-                    <div class="row">
-                        <p class="prise col-lg-5">4471 грн.</p>
-                        <p class="contact-button col-lg-5"><a href="#footer">Котакты</a></p>
-                    </div>                        
+            <!--sectionBaner-->
+            <div class="container-fluid position-relative overflow-hidden baner" id="sectionBaner">
+                <div class="row">
+                    <div class="infoBlok col-lg-6 col-md-8 col-xs-12">
+                        <h1 class="name-product">Реечный домкрат Hi-Lift Jack 1.2м</h1>
+                        <p class="description">Домкрат обладает мощностью 3175 килограм и может использоваться для подъема, вытягивания, фиксации, толкания, перекидывания автомобиля и работы с лебедкой. Это приспособление многоцелевого назначения, которое пригодится Вам как дома, так и в условиях сурового бездорожья. Хай Джек поможет вам вытащить ваш автомобиль в самых сложных и экстремальных ситуациях. Если вы приобретете его и попользуетесь некоторое время, то вы начнете воспринимать его как верного и незаменимого друга.</p>
+                        <div class="row justify-content-center align-items-center">
+                            <p class="prise col-lg-6">4471 грн.</p>
+                            <p class="contact-btn col-lg-6"><a href="#footer" class="contact-button btn btn-outline-secondary my-2">Котакты</a></p> 
+                        </div>
+                    </div>                       
                 </div>       
             </div>
+
+            <!--sectionSpecifications-->
             <div class="container-fluid" id="sectionSpecifications">
-                <div class="row caption description" >
+                <div class="row caption">
                     <div class="col-12">
                         <h1>Технические характеристики</h1>
                     </div>
                 </div>
-                <div class="row  article">
+                <div class="row  article align-items-center">
                     <div class="col-lg-6">
                         <article class="article-text">
                             <table class="table">
@@ -114,33 +113,36 @@
                     </div>
                 </div>
             </div>
+
+            <!--sectionAccessories-->
             <div class="container-fluid" id="sectionAccessories">
-                <diw class="row caption accessories">
-                    <div class="col-12 ">
+                <diw class="row caption">
+                    <div class="col-md-12 ">
                         <h1>Сопутствущие аксессуары</h1>
                     </div>
                 </diw>
-                <div class="row">
-                    <div class="col-lg-3 card-product">
+                <div class="row  accessories">
+                    <div class="col-lg-3 col-md-6 col-sm-6 card-product">
                         <h4>Зацеп к диску для домкрата Hi-Lift Jack</h3>
                         <img src="../Landing_Hi-Lift_Jack_1.2/images/ARBLiftMate0208-352x332 (1).jpg" alt="">
                         <p class="card-description">В качестве альтернативного места для зацепления домкратом Hi-Lift может быть колесо Вашего автомобиля. Подходит для использования с большинством колесных дисков, которые имеют крупные спицы.</p>
                         <p class="prise-acsessories">2340.7 грн</p>
                     </div>
-                    <div class="col-lg-3 card-product">
+                    <div class="col-lg-3 col-md-6 col-sm-6 card-product">
                         <h4>Такелажный набор Hi-Lift Jack</h3>
                         <img src="../Landing_Hi-Lift_Jack_1.2/images/OffroadkitARB203ORK-352x332.jpg" alt="">
                         <p class="card-description">Такелажный комплект содержит все, что Вам может понадобиться для использования домкрата Hi-Lift в качестве ручной лебедки. Весь комплект упакован в прочную сумку.</p>
                         <p class="prise-acsessories">3945 грн</p>
                     </div>
-                    <div class="col-lg-3 card-product">
+                    <div class="w-100  d-sm-block d-md-block d-lg-none d-xl-none"></div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 card-product">
                         <h4>Фиксатор ручки домкрата</h3>
                         <img src="../Landing_Hi-Lift_Jack_1.2/images/Handle-Keeper-352x332.jpg" alt="">
                         <p class="card-description">Одевается на ручку и рейку Хай-Джека в транспортном положении, а так же «Handle Keeper» фиксирует ручку в верхнем положении при работе.
                             Кроме этого Хай-Джек с зафиксированной ручкой гораздо удобнее переносить одной рукой за ручку</p>
                         <p class="prise-acsessories">657.5 грн</p>                       
                     </div>
-                    <div class="col-lg-3 card-product">
+                    <div class="col-lg-3 col-md-6 col-sm-6 card-product">
                         <h4>Подставка под домкрат</h3>
                         <img src="../Landing_Hi-Lift_Jack_1.2/images/OffroadbaseARB203ORB-352x332.jpg" alt="">
                         <p class="card-description">Подставка под домкрат — простое и удобное в обращении приспособление позволяющее поднимать автомобиль Хай-Джеком на слабых грунтах.
@@ -149,25 +151,28 @@
                     </div>
                 </div>
             </div>
+
+            <!--FOOTER-->
             <footer class="container-fluid" id="footer">
                 <div class="row">
-                    <div class="col-3 telephones">
+                    <div class="col-lg-3 col-md-3 col-sm-6 telephones">
                         <h4>Телефоны</h4>
                         <p>+38 044 360-45-11 <br> +38 096 932-81-03 <br> +38 067 225-83-80 </p>
                     </div>
-                    <div class="col-3 delivery">
+                    <div class="col-lg-3 col-md-3 col-sm-6 delivery">
                         <h4>Доставка</h4>
                         <p> Киев - 50 грн. <br> 
                             Доставка ТК «Новая почта» <br>
                             Доставка другими ТК <br> (по согласованию)</p>
                     </div>
-                    <div class="col-3 payment">
+                    <div class="w-100  d-sm-block d-md-none d-lg-none d-xl-none"></div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 payment">
                         <h4>Оплата</h4>
                         <p>Оплата наличными курьеру<br>
                             На карту Приватбанка<br>
                             Безналичный (с НДС)</p>
                     </div>
-                    <div class="col-3 icons">
+                    <div class="col-lg-3 col-md-3 col-sm-6 icons">
                         <p>
                             <i class="fas fa-at"></i>
                             <email>autodream@ukr.net</email>
@@ -178,18 +183,6 @@
                 </div>
             </footer>
         </main>
-
-
-        <script>
-
-            function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-              
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-            </script> 
     </body>
  </html>
     
